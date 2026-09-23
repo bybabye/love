@@ -1,19 +1,7 @@
-import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { resolve } from 'path'
+import { defineConfig } from 'vite'
 
+// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-
-  build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-        sketchbook: resolve(
-          __dirname,
-          'src/meng-to-sketchbook/meng-to-sketchbook.html'
-        ),
-      },
-    },
-  },
 })
