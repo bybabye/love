@@ -1,11 +1,19 @@
 
 import './App.css'
-import { Homepage } from './home/homepage'
 
 function App() {
-  
-
-  return   <Homepage/>
+  return (
+    <iframe
+      title="Meng To Sketchbook"
+      src="/src/home/meng-to-sketchbook.html"
+      style={{
+        width: '100%',
+        height: '100vh',
+        border: 0,
+        display: 'block',
+      }}
+    />
+  )
 }
 
 export default App
